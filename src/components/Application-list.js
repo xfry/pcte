@@ -10,7 +10,7 @@ class ApplicationList extends React.Component{
     return (
       <div>
         <ul>
-          <li>PCTE canvas</li>
+          <li>PCTE canvas.</li>
         </ul>
       </div>
     );
