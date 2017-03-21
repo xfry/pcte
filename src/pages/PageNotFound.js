@@ -1,8 +1,8 @@
-// src/components/NotFoundPage.js
+// src/components/PageNotFound.js
 import React from 'react';
 import { Link } from 'react-router';
 
-export default class NotFoundPage extends React.Component {
+class PageNotFound extends React.Component {
   render() {
     return (
       <div className="not-found">
@@ -15,3 +15,5 @@ export default class NotFoundPage extends React.Component {
     );
   }
 }
+
+export default PageNotFound
