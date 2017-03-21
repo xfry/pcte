@@ -8,7 +8,7 @@ const app = document.getElementById('main');
 
 ReactDOM.render(
   <Router history={hashHistory}>
-    <Route path="/" component={Layout} />
+    <Route path="/" component={Layout}/>
     <Route path="/notfound" component={PageNotFound} />
   </Router>,
   app
