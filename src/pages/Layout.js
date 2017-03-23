@@ -1,25 +1,15 @@
 import React from 'react';
-import { Router, Route, hasHistory, Link } from "react-router";
+import ReactDom from 'react-dom';
 
-/*
 
-*/
-
-export class Layout extends React.Component {
+class Layout extends React.Component {
   render() {
     return (
       <div>
-        <div>
-          <h1>Welcome</h1>
-          <ul>
-            <Link to="/application">Application</Link>
-            <Link to="/logout">Logout</Link>
-          </ul>
-        </div>
+        <h1>This is the layout</h1>
       </div>
-    );
+    )
   }
-
 };
 
 export default Layout;
