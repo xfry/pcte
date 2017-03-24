@@ -4,7 +4,8 @@ import { Link } from 'react-router';
 import {Button, Row, Col, Icon, Navbar, NavItem} from 'react-materialize';
 
 const layoutStyle = {
-  height: '800px'
+  height: '800px',
+  width: '100%'
 }
 
 const linkStyles = {
