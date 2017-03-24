@@ -1,9 +1,16 @@
 import React from 'react'
 import { Route, IndexRoute } from "react-router";
 import Layout from './pages/Layout';
+import NotFound from './pages/NotFound';
 
-const routes = (
-  <Route path="/" component={Layout}/>
+const routesConfig = (
+  <Route>
+    <Route path="/" component={Layout}>
+      <IndexRoute component={Layout} />
+    </Route>
+
+    <Route path="*" component={NotFound} />
+  </Route>
 );
 
-export default routes;
+export default routesConfig;
