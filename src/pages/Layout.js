@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { Link } from 'react-router';
 import {Button, Row, Col, Icon, Navbar, NavItem} from 'react-materialize';
+import appCss from '../style/app.scss';
 
 const layoutStyle = {
   height: '800px',
@@ -27,7 +28,6 @@ class Layout extends React.Component {
           </Navbar>
           <Row l={4}>
             <Col l={3} style={layoutStyle}>
-              <p>Welcome</p>
               {this.props.children}
             </Col>
           </Row>
