@@ -1,6 +1,12 @@
+@import "./reset";
+@import "./foundation";
+
+
 #main {
-  background: pink;
   i {
     color: black;
+    font-size: rem-calc(2em);
+    padding: 0;
+    margin: 0;
   }
 }

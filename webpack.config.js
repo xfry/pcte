@@ -25,7 +25,10 @@ module.exports = {
         loader: ['css-loader', 'sass-loader'],
         publicPath: path.join(__dirname, '/dist')
       })
-    }]
+    },{ 
+      test: /\.(png|jpg|ttf|eot|svg|woff)$/,
+      loader: 'url-loader?limit=65000&mimetype=image/svg+xml&name=public/fonts/[name].[ext]' },
+    ]
   },
   
   devtool: 'inline-source-map',
@@ -42,5 +45,10 @@ module.exports = {
       disable: false,
       allChunks: true
     }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    })
   ]
 };
