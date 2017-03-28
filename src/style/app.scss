@@ -2,6 +2,12 @@
 @import "./foundation";
 
 
+/* list of components */
+@import "./component/LoginForm";
+
+/* List pages */
+@import "./pages/Layout";
+
 #main {
   i {
     color: black;

@@ -1,0 +1,42 @@
+form {
+  margin: 0 auto;
+  padding: 10px;
+  position:relative;
+  border: 1px solid #eee;
+  box-shadow: -1px 1px 5px #ddd;
+
+  .help-text {
+    display: none;
+  }
+
+  // This is the Media Query breakpoint for medium tablets
+  @include breakpoint(medium) {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  // This is the Media Query breakpoint for large tablets
+  @include breakpoint(large up) {
+    margin-top: 50px;
+    label, input, .help-text {
+      float: none !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      max-width: 350px;
+    }
+  }
+
+  .form-btn_container {
+    text-align: center;
+    button {
+      min-width: 200px;
+      @include breakpoint(medium) {
+        min-width: 320px;
+      }
+      // This is the Media Query breakpoint for large tablets
+      @include breakpoint(large up) {
+        min-width: 350px;
+      }
+    }
+  }
+}

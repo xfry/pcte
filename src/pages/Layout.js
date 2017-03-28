@@ -10,7 +10,7 @@ class Layout extends React.Component {
         <div className="top-bar">
           <div className="top-bar-left">
             <ul className="dropdown menu" data-dropdown-menu>
-              <li className="menu-text">Logo</li>
+              <li className="menu-text top-bar_logo"></li>
             </ul>
           </div>
           <div className="top-bar-right">
@@ -19,6 +19,7 @@ class Layout extends React.Component {
             </ul>
           </div>
         </div>
+      {this.props.children} {/*this render login*/}
       </div>
     );
   }

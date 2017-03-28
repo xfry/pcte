@@ -27,8 +27,12 @@ module.exports = {
       })
     },{ 
       test: /\.(png|jpg|ttf|eot|svg|woff)$/,
-      loader: 'url-loader?limit=65000&mimetype=image/svg+xml&name=public/fonts/[name].[ext]' },
-    ]
+      loader: 'url-loader?limit=100000&mimetype=image/svg+xml&name=public/fonts/[name].[ext]' 
+    },{ 
+      test: /\.(png|jpg|svg)$/,
+      include:  path.join(__dirname, 'src', 'assets', 'images'),
+      loader: 'url-loader?limit=80000'
+    },]
   },
   
   devtool: 'inline-source-map',
