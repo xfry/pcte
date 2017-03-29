@@ -1,19 +1,27 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-
-const LayoutStyle = {
-  margin: '0',
-  padding: '0',
-  backgroundColor: 'gold'
-};
+import { Link } from 'react-router';
+import appCss from '../style/app.scss';
 
 class Layout extends React.Component {
   render() {
     return (
-      <div style={LayoutStyle} className="container">
-        <h1>This is the layout</h1>
+      <div className="container">
+        <div className="top-bar">
+          <div className="top-bar-left">
+            <ul className="dropdown menu" data-dropdown-menu>
+              <li className="menu-text top-bar_logo"></li>
+            </ul>
+          </div>
+          <div className="top-bar-right">
+            <ul className="menu">
+              <li><button type="button" className="button"><i className="fi-address-book"> </i></button></li>
+            </ul>
+          </div>
+        </div>
+      {this.props.children} {/*this render login*/}
       </div>
-    )
+    );
   }
 };
 
